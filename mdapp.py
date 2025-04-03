@@ -3,10 +3,10 @@ import pandas as pd
 from PIL import Image
 
 # Load data
-draft_order = pd.read_csv(r"C:\Users\SURFACE\Downloads\draft_order.csv")
-team_needs = pd.read_csv(r"C:\Users\SURFACE\Downloads\team_needs.csv")
-player_data = pd.read_csv(r"C:\Users\SURFACE\Downloads\player_board.csv", encoding="latin1")  # fix for special characters
-team_logos = pd.read_csv(r"C:\Users\SURFACE\Downloads\nfl_teamlogos.csv")
+draft_order = pd.read_csv("draft_order.csv")
+team_needs = pd.read_csv("team_needs.csv")
+player_data = pd.read_csv("player_board.csv", encoding="latin1")  # fix for special characters
+team_logos = pd.read_csv("teamlogos.csv")
 
 # Combine Need columns into a single 'Needs' list
 need_cols = ['Need 1', 'Need 2', 'Need 3', 'Need 4', 'Need 5']
